@@ -1,0 +1,43 @@
+<mat-sidenav-container>
+  <mat-sidenav [(opened)]="opened" position="end">
+    <button class="btn" (click)="opened = !opened">
+      <mat-icon id="btn-white">close</mat-icon> <!-- X icon -->
+    </button>
+
+    <mat-list>
+      <a routerLink="/home">
+        <mat-list-item><p>HOME</p></mat-list-item>
+      </a>
+      <a routerLink="/o-mnie">
+        <mat-list-item><p>O MNIE</p></mat-list-item>
+      </a>
+      <a routerLink="/medycyna-estetyczna">
+        <mat-list-item><p>MEDYCYNA ESTETYCZNA</p></mat-list-item>
+      </a>
+      <a routerLink="/cennik">
+        <mat-list-item><p>CENNIK</p></mat-list-item>
+      </a>
+      <a routerLink="/galeria">
+        <mat-list-item><p>GALERIA</p></mat-list-item>
+      </a>
+      <a routerLink="/polityka-prywatnosci">
+        <mat-list-item><p>POLITYKA PRYWATNOŚCI</p></mat-list-item>
+      </a>
+      <a routerLink="/kontakt">
+        <mat-list-item><p>KONTAKT</p></mat-list-item>
+      </a>
+    </mat-list>
+
+  </mat-sidenav>
+  <mat-sidenav-content >
+    <button class="btn" (click)="opened = !opened">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <app-header></app-header>
+    <app-block1></app-block1>
+    <app-block2></app-block2>
+    <app-footer></app-footer>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
