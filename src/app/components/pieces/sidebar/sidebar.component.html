@@ -1,0 +1,30 @@
+<button class="sidebar__btn-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+
+    <button type="button" class="sidebar__btn-menu sidebar__btn-menu--white" data-bs-dismiss="offcanvas"
+            aria-label="Close">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <div class="offcanvas-body">
+
+    <ul class="sidebar__list">
+
+      <li><a mat-list-item routerLink="/home">HOME</a></li>
+      <li><a mat-list-item routerLink="/o-mnie">O MNIE</a></li>
+      <li><a mat-list-item routerLink="/medycyna-estetyczna">MEDYCYNA ESTETYCZNA</a></li>
+      <li><a mat-list-item routerLink="/cennik">CENNIK</a></li>
+      <li><a mat-list-item routerLink="/galeria">GALERIA</a></li>
+      <li><a mat-list-item routerLink="/kontakt">KONTAKT</a></li>
+    </ul>
+<div class="sidebar__imgContainer">
+    <img src="/src/assets/sidebar-logo.jpg" alt="">
+</div>
+
+  </div>
+</div>
