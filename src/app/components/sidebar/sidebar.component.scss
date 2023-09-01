@@ -1,119 +1,79 @@
 
-mat-sidenav-container {
-  height: 100vh;
-  //position: absolute;
-  //top: 0;
-  //right: 0;
-  background-color: transparent;
-  z-index: 343 !important;
-}
-
-mat-sidenav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  transition: width 0.05s ease-in-out;
+.sidebar {
   background-color: black;
-  width: 30vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-
-.btn {
-  position: fixed;
-  top: 0;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-}
-
-#btn-white {
-  background-color: snow;
-  color: black;
-}
-
-.mat-icon:hover {
-  cursor: pointer;
-}
-
-.mat-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  font-weight: 300;
-  width: 70px;
-  height: 70px;
-  color: snow;
-  background-color: black;
-  border: none;
-}
-
-mat-list {
-  margin-top: 80px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
-mat-list-item {
-  padding: 15px 0;
-  margin: 10px 0;
-
-  width: min-content;
-
-}
-
-mat-list-item:hover {
-  cursor: pointer;
-}
-
-a {
   color: white;
-  text-decoration: none;
+  width: 30vw;
+
+  &__btn-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+  }
+
+  &__list {
+    margin-top: 50px;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li {
+      padding: 3vh 0;
+
+    }
+  }
+
+  &__content {
+    img {
+      width: 70%;
+      height: 20%;
+      position: absolute;
+      bottom: 10vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.btn-closed {
+  width: 50px;
+  height: 50px;
+  color: white;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: black;
+  outline: none;
+  border: none;
+
+  mat-icon {
+    color: white;
+  }
 
 }
 
-p {
-  color: snow;
-}
 
-.grinch{
-  width: 400px;
-  height: 400px;
-
-  background-color: darkgreen;
-}
-
-
-
-
-
-@media (max-width: 1000px) {
-  mat-sidenav {
+@media only screen and (max-width: 800px) {
+  .sidebar {
     width: 40vw;
   }
 }
 
-
-@media (max-width: 800px) {
-  mat-sidenav {
+@media only screen and (max-width: 600px) {
+  .sidebar {
     width: 50vw;
   }
-
 }
 
-
-@media (max-width: 600px) {
-  mat-sidenav {
-    width: 100vw;
+@media only screen and (max-width: 450px) {
+  .sidebar {
+    width: 90vw;
   }
-
 }
-
-

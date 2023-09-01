@@ -1,15 +1,31 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss'],
-
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  opened = false;
+
+  isWide: boolean = false;
+
+  constructor() { }
 
   ngOnInit(): void {
+    this.checkScreenWidth();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.checkScreenWidth();
+  }
+
+  checkScreenWidth() {
+    this.isWide = window.innerWidth >= 600;
+  }
+
+  isWideScreen() {
+    return this.isWide;
   }
 
 }

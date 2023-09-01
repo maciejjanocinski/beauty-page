@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Block1Component } from './block1.component';
+import { HpBlock1Component } from './hp-block1.component';
 
 describe('Block1Component', () => {
-  let component: Block1Component;
-  let fixture: ComponentFixture<Block1Component>;
+  let component: HpBlock1Component;
+  let fixture: ComponentFixture<HpBlock1Component>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Block1Component]
+      declarations: [HpBlock1Component]
     });
-    fixture = TestBed.createComponent(Block1Component);
+    fixture = TestBed.createComponent(HpBlock1Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

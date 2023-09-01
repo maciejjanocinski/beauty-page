@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Block2Component } from './block2.component';
+import { AestheticComponent } from './aesthetic.component';
 
-describe('Block2Component', () => {
-  let component: Block2Component;
-  let fixture: ComponentFixture<Block2Component>;
+describe('AestheticComponent', () => {
+  let component: AestheticComponent;
+  let fixture: ComponentFixture<AestheticComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [Block2Component]
+      declarations: [AestheticComponent]
     });
-    fixture = TestBed.createComponent(Block2Component);
+    fixture = TestBed.createComponent(AestheticComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

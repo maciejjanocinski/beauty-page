@@ -13,8 +13,14 @@ import {SidebarComponent} from "./components/sidebar/sidebar.component";
 import {FormsModule} from "@angular/forms";
 import {HeaderComponent} from './components/header/header.component';
 import {FooterComponent} from './components/footer/footer.component';
-import { Block1Component } from './components/block1/block1.component';
-import { Block2Component } from './components/block2/block2.component';
+import {HpBlock1Component} from './components/homepage-block1/hp-block1.component';
+import {HpBlock2Component} from './components/homePage-block2/hp-block2.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { PricesComponent } from './components/prices/prices.component';
+import { AestheticComponent } from './components/aesthetic/aesthetic.component';
+import { AboutComponent } from './components/about/about.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
 
 
 
@@ -24,8 +30,14 @@ import { Block2Component } from './components/block2/block2.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    Block1Component,
-    Block2Component
+    HpBlock1Component,
+    HpBlock2Component,
+    ContactComponent,
+    HomeComponent,
+    PricesComponent,
+    AestheticComponent,
+    AboutComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +52,6 @@ import { Block2Component } from './components/block2/block2.component';
   ],
   providers: [],
   exports: [
-    HeaderComponent
   ],
   bootstrap: [AppComponent]
 })
