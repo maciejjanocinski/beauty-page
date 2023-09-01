@@ -6,12 +6,12 @@
 <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
   <div class="offcanvas-header">
 
-    <button type="button" class=" btn-closed" data-bs-dismiss="offcanvas"
+    <button type="button" class="sidebar__btn-menu sidebar__btn-menu--white" data-bs-dismiss="offcanvas"
             aria-label="Close">
       <mat-icon>close</mat-icon>
     </button>
   </div>
-  <div class="offcanvas-body sidebar__content">
+  <div class="offcanvas-body">
 
     <ul class="sidebar__list">
 
@@ -22,8 +22,9 @@
       <li><a mat-list-item routerLink="/galeria">GALERIA</a></li>
       <li><a mat-list-item routerLink="/kontakt">KONTAKT</a></li>
     </ul>
-
-    <img src="/assets/sidebar-logo.jpg" alt="">
+<div class="sidebar__imgContainer">
+    <img src="/src/assets/sidebar-logo.jpg" alt="">
+</div>
 
   </div>
 </div>

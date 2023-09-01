@@ -1,0 +1,38 @@
+.header-container {
+  background-color: transparent;
+  position: absolute;
+  height: fit-content;
+  width: 60vw;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  a {
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+    letter-spacing: 5px;
+    overflow-y: hidden;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header-container {
+    a {
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+  }
+
+}

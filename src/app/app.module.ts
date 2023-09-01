@@ -9,18 +9,18 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatListModule} from "@angular/material/list";
-import {SidebarComponent} from "./components/sidebar/sidebar.component";
+import {SidebarComponent} from "./components/pieces/sidebar/sidebar.component";
 import {FormsModule} from "@angular/forms";
-import {HeaderComponent} from './components/header/header.component';
-import {FooterComponent} from './components/footer/footer.component';
-import {HpBlock1Component} from './components/homepage-block1/hp-block1.component';
-import {HpBlock2Component} from './components/homePage-block2/hp-block2.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { HomeComponent } from './components/home/home.component';
-import { PricesComponent } from './components/prices/prices.component';
-import { AestheticComponent } from './components/aesthetic/aesthetic.component';
-import { AboutComponent } from './components/about/about.component';
-import { GalleryComponent } from './components/gallery/gallery.component';
+import {HeaderComponent} from './components/pieces/header/header.component';
+import {FooterComponent} from './components/pieces/footer/footer.component';
+import {HpBlock1Component} from './components/pieces/homepage-block1/hp-block1.component';
+import {HpBlock2Component} from './components/pieces/homePage-block2/hp-block2.component';
+import { ContactComponent } from './components/sites/contact/contact.component';
+import { HomeComponent } from './components/sites/home/home.component';
+import { PricesComponent } from './components/sites/prices/prices.component';
+import { AestheticComponent } from './components/sites/aesthetic/aesthetic.component';
+import { AboutComponent } from './components/sites/about/about.component';
+import { GalleryComponent } from './components/sites/gallery/gallery.component';
 
 
 
