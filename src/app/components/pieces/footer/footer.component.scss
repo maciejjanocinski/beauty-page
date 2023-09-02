@@ -5,10 +5,79 @@
   background-color: black;
   align-self: flex-end;
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100vw;
+  justify-content: center;
   position: absolute;
   bottom: 0;
   left: 0;
+
 }
+
+.footer-content {
+
+display: flex;
+flex-direction: column;
+
+}
+
+.siema-wszystkim {
+
+display: flex;
+flex-direction: column;
+text-align: left;
+color: white;
+height: 100px;
+font-size: 20px;
+padding-left: 20px;
+width:200vw;
+justify-content: flex-start;
+font-weight: 500;
+}
+
+.napis {
+overflow-y: hidden;
+margin-top: -3px;
+height: 1.5em;
+
+}
+
+.ulica {
+
+display: flex;
+text-align: left;
+color: white;
+height: 40px;
+width:30vw;
+font-weight: 100;
+
+
+}
+
+.platnosc {
+
+text-align: right;
+color: white;
+height: 1.5em;
+width:97vw;
+font-weight: 550;
+flex-direction: column;
+margin-top: 10px
+}
+
+.phone-link {
+color:white;
+text-decoration: none;
+width: fit-content;
+height: 1.5em;
+overflow-y: hidden;
+}
+
+.phone-link2 {
+color:white;
+text-decoration: none;
+width: fit-content;
+height: 1.5em;
+overflow-y: hidden;
+}
+
