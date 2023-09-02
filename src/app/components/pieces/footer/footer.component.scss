@@ -1,4 +1,4 @@
-.footer-container {
+.footer {
   height: 20vh;
   text-align: center;
   color: white;
@@ -6,9 +6,31 @@
   align-self: flex-end;
   display: flex;
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
+
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px solid red;
+    width: 70%;
+  }
+
+  &__socialmedia{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid white;
+  }
+
+  &__rights {
+    border: 1px solid white;
+    margin-bottom: 10px;
+  }
 }
+
