@@ -18,7 +18,7 @@ body {
 .site-container {
   width: 100%;
   height: auto;
-  min-height: 100vh;
+  //min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,12 +26,8 @@ body {
 
 .site-content {
   z-index: -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
-  height: 120vh;
-  align-self: center;
+  //min-height: 100vh;
+
 
 }
