@@ -9,25 +9,34 @@
   overflow-x: hidden;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
-  background-color: white;
   font-family: 'Montserrat', sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 
 .site-container {
   width: 100%;
   height: auto;
-  //min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .site-content {
   z-index: -1;
-  width: 100vw;
-  //min-height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+}
 
-
+.mat-typography{
+  padding-right: 0 !important;
 }

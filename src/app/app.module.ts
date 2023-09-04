@@ -13,8 +13,6 @@ import {SidebarComponent} from "./components/pieces/sidebar/sidebar.component";
 import {FormsModule} from "@angular/forms";
 import {HeaderComponent} from './components/pieces/header/header.component';
 import {FooterComponent} from './components/pieces/footer/footer.component';
-import {HpBlock1Component} from './components/pieces/homepage-block1/hp-block1.component';
-import {HpBlock2Component} from './components/pieces/homePage-block2/hp-block2.component';
 import { ContactComponent } from './components/sites/contact/contact.component';
 import { HomeComponent } from './components/sites/home/home.component';
 import { PricesComponent } from './components/sites/prices/prices.component';
@@ -30,14 +28,12 @@ import { GalleryComponent } from './components/sites/gallery/gallery.component';
     HeaderComponent,
     FooterComponent,
     SidebarComponent,
-    HpBlock1Component,
-    HpBlock2Component,
     ContactComponent,
     HomeComponent,
     PricesComponent,
     AestheticComponent,
     AboutComponent,
-    GalleryComponent
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

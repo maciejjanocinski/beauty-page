@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'kontakt', component: ContactComponent},
   {path: 'o-mnie', component: AboutComponent},
-  {path: 'medycyna-estetyczna', component: AestheticComponent},
+  {path: 'zabiegi', component: AestheticComponent},
   {path: 'galeria', component: GalleryComponent},
   {path: 'cennik', component: PricesComponent},
 

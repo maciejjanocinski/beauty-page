@@ -1,4 +1,5 @@
 .footer-container {
+  //height: 20vh;
   height: 236px;
   text-align: center;
   color: white;
@@ -11,78 +12,76 @@
   //position: absolute;
   //bottom: 0;
   //left: 0;
-
 }
-
 .footer-content {
-  overflow-y: hidden;
-  display: flex;
-  flex-direction: column;
-
+display: flex;
+flex-direction: column;
 }
-
 .siema-wszystkim {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  color: white;
-  height: 100px;
-  font-size: 20px;
-  padding-left: 20px;
-  width: 200vw;
-  justify-content: flex-start;
-  font-weight: 500;
+display: flex;
+flex-direction: column;
+text-align: left;
+color: white;
+height:100px;
+font-size: 20px;
+padding-left: 20px;
+width:200vw;
+justify-content: flex-start;
+font-weight: 500;
 }
-
 .napis {
-  overflow-y: hidden;
-  margin-top: -3px;
-  height: 1.5em;
-
+overflow-y: hidden;
+margin-top: -2.3px;
+height: 1.5em;
 }
-
 .ulica {
+display: flex;
+text-align: left;
+color: white;
+height: 60px;
+width:70vw;
+font-weight: 11;
+@media screen and (max-width: 768px) {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+display: flex;
+justify-content: space-between;
+}}
 
-  display: flex;
-  text-align: left;
-  color: white;
-  height: 60px;
-  width: 70vw;
-  font-weight: 11;
-  @media screen and (max-width: 768px) {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 .platnosc {
-
-  text-align: right;
-  color: white;
-  height: 1.5em;
-  width: 97vw;
-  font-weight: 550;
-  flex-direction: column;
-  margin-top: 10px
+text-align: right;
+color: white;
+height: 1.5em;
+width:99vw;
+font-weight: 550;
+flex-direction: column;
+margin-top: 10px
 }
-
 .phone-link {
-  color: white;
-  text-decoration: none;
-  width: fit-content;
-  height: 1.5em;
-  overflow-y: hidden;
+color:white;
+text-decoration: none;
+width: fit-content;
+height: 1.5em;
+overflow-y: hidden;
 }
-
 .phone-link2 {
-  margin-top: 1px;
-  color: white;
-  text-decoration: none;
-  width: fit-content;
-  height: 1.4em;
-  overflow-y: hidden;
+color:white;
+text-decoration: none;
+width: fit-content;
+height: 1.4em;
+overflow-y: hidden;
 }
 
+
+.mail {
+color:white;
+text-decoration: none;
+width: fit-content;
+height: 1.5em;
+font-weight: 333;
+overflow-y: hidden;
+text-decoration: underline;
+
+}
