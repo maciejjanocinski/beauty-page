@@ -18,19 +18,132 @@
   &__text {
     position: absolute;
     top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
+    left: 23%;
+
     text-align: center;
 
   }
 }
+
+
+.site-content--home2 {
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #efefef;
+
+
+  h1 {
+    line-height: 1.2;
+    padding: 1rem;
+    font-size: 4rem;
+    overflow-y: hidden;
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    letter-spacing: 2px;
+  }
+
+  h2 {
+    text-align: center;
+    width: fit-content;
+    align-self: center;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  &__text {
+    width: fit-content;
+    max-width: 800px;
+    margin: 0 5vw;
+    text-align: center;
+    align-self: center;
+    font-size: 1.3rem;
+    padding: 10px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    opacity: 0.8;
+  }
+
+  &__signature {
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    margin-right: 25vw;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+
+}
+
+
+.site-content--home3 {
+  display: flex;
+  background-color: #e7e4e4;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+
+
+  h1 {
+    margin-top: 10vh;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    width: fit-content;
+   text-align: center;
+    line-height: 1.4;
+  }
+
+  mat-icon {
+    color: goldenrod;
+  }
+
+  &__wrapper {
+
+    max-width: 1400px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__box {
+    max-width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 10px;
+    p {
+      opacity: 0.8;
+    }
+  }
+}
+
 
 @media only screen and (max-width: 1300px) {
   .site-content--home1 {
     img {
       transform: translate(70%, -50%);
     }
+
+    &__text {
+      left: 12%;
+    }
   }
+
+  .site-content--home2 {
+    &__signature {
+      margin-right: 23vw;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 1100px) {
@@ -38,8 +151,14 @@
     img {
       transform: translate(65%, -50%);
     }
-
   }
+
+  .site-content--home2 {
+    &__signature {
+      margin-right: 20vw;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -47,12 +166,28 @@
     img {
       transform: translate(55%, -50%);
     }
+
     &__text {
       position: absolute;
       top: 80%;
       left: 50%;
-      transform: translate(-50%, 0%);
+      transform: translate(-50%, -50%);
 
     }
   }
+
+  .site-content--home2 {
+    &__signature {
+      margin-right: 5vw;
+    }
+  }
 }
+
+
+
+
+
+
+
+
+
