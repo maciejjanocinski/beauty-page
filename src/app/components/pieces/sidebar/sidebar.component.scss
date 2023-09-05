@@ -7,6 +7,8 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+
   &__btn-menu {
     position: fixed;
     top: 0;
@@ -19,6 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 
     mat-icon {
       width: 70%;
@@ -39,30 +42,34 @@
     }
   }
 
+
+
   &__list {
     margin-top: 50px;
     margin-left: 10px;
+    height: 40vh;
     z-index: 3;
     margin-bottom: 100px;
-
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     a {
       font-size: 1.6rem;
       color: white;
       text-decoration: none;
     }
 
-    li {
-      padding: 20px 0;
-
-    }
+    //li {
+    //  padding: 20px 0;
+    //
+    //}
   }
 
   &__content {
     img {
       width: 80%;
       max-width: 300px;
-      margin-left: 50%;
-      transform: translateX(-50%);
+      margin: 0 auto;
       display: block;
     }
   }
@@ -98,11 +105,11 @@
 }
 
 @media only screen and (max-height: 800px) {
-  .sidebar {
-    img {
-      display: none;
-    }
-  }
+  //.sidebar {
+  //  img {
+  //    display: none;
+  //  }
+  //}
 }
 
 

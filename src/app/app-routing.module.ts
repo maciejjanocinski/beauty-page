@@ -14,8 +14,6 @@ const routes: Routes = [
   {path: 'zabiegi', component: AestheticComponent},
   {path: 'galeria', component: GalleryComponent},
   {path: 'cennik', component: PricesComponent},
-
-
   {path: '**', redirectTo: ''}
 ];
 

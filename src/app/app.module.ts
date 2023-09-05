@@ -19,6 +19,8 @@ import { PricesComponent } from './components/sites/prices/prices.component';
 import { AestheticComponent } from './components/sites/aesthetic/aesthetic.component';
 import { AboutComponent } from './components/sites/about/about.component';
 import { GalleryComponent } from './components/sites/gallery/gallery.component';
+import { ContactFormComponent } from './components/pieces/contact-form/contact-form.component';
+import {HttpClientModule} from "@angular/common/http";
 
 
 
@@ -34,6 +36,7 @@ import { GalleryComponent } from './components/sites/gallery/gallery.component';
     AestheticComponent,
     AboutComponent,
     GalleryComponent,
+    ContactFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { GalleryComponent } from './components/sites/gallery/gallery.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    HttpClientModule
   ],
   providers: [],
   exports: [
