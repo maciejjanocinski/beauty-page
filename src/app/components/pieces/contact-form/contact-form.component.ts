@@ -21,12 +21,10 @@ export class ContactFormComponent {
   async submitForm() {
     try {
       const response = await this.http.post('https://formspree.io/f/meqbkrkp', this.formData).toPromise();
-      console.log('Wiadomość została wysłana', response);
       this.okMessageVisible = true;
-      this.errorMessageVisible = false; // Upewnij się, że jest wyłączony
+      this.errorMessageVisible = false;
     } catch (error) {
-      console.error('Błąd podczas wysyłania wiadomości', error);
-      this.okMessageVisible = false; // Upewnij się, że jest wyłączony
+      this.okMessageVisible = false;
       this.errorMessageVisible = true;
     }
   }
