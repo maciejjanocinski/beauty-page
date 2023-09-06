@@ -13,15 +13,15 @@ import {SidebarComponent} from "./components/pieces/sidebar/sidebar.component";
 import {FormsModule} from "@angular/forms";
 import {HeaderComponent} from './components/pieces/header/header.component';
 import {FooterComponent} from './components/pieces/footer/footer.component';
-import { ContactComponent } from './components/sites/contact/contact.component';
-import { HomeComponent } from './components/sites/home/home.component';
-import { PricesComponent } from './components/sites/prices/prices.component';
-import { AestheticComponent } from './components/sites/aesthetic/aesthetic.component';
-import { AboutComponent } from './components/sites/about/about.component';
-import { GalleryComponent } from './components/sites/gallery/gallery.component';
-import { ContactFormComponent } from './components/pieces/contact-form/contact-form.component';
+import {ContactComponent} from './components/sites/contact/contact.component';
+import {HomeComponent} from './components/sites/home/home.component';
+import {PricesComponent} from './components/sites/prices/prices.component';
+import {AestheticComponent} from './components/sites/aesthetic/aesthetic.component';
+import {AboutComponent} from './components/sites/about/about.component';
+import {GalleryComponent} from './components/sites/gallery/gallery.component';
+import {ContactFormComponent} from './components/pieces/contact-form/contact-form.component';
 import {HttpClientModule} from "@angular/common/http";
-
+import {GoogleMapsModule} from "@angular/google-maps";
 
 
 @NgModule({
@@ -48,11 +48,11 @@ import {HttpClientModule} from "@angular/common/http";
     MatIconModule,
     MatSidenavModule,
     MatListModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleMapsModule,
   ],
   providers: [],
-  exports: [
-  ],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
