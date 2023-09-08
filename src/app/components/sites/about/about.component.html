@@ -1,17 +1,23 @@
 <app-sidebar></app-sidebar>
-<div class="site-container">
-  <div class="site-content site-content--about">
-    <p>ABOUT</p>
-  </div>
-  <div class="site-content site-content--about">
-    <p>ABOUT</p>
-  </div>
-  <div class="site-content site-content--about">
-    <p>ABOUT</p>
-  </div>
-  <app-footer></app-footer>
+<div [@fadeInOut]="animState">
+  <p class = "zespol" > lekarz Nikoleta Kaszuba
+    <img src="/assets/nika.jpeg" alt ="Zdjęcie" *ngIf="pokazZdjecie">
+
 </div>
 
+<div [@fadeInOut]="animTekst">
+  <p class = "tekst" *ngIf="animTekst === 'in'"> lek. Nikoleta Kaszuba medycyną estetyczną, która jest jej wielką pasją zajmuje się od 2021 roku. Ukończyła w Polsce Podyplomową Szkołę Medycyny Estetycznej uzyskując tytuł lekarza medycyny estetycznej nadawany przez Polskie Towarzystwo Lekarskie i Collegium Medicum Uniwersytetu Mikołaja Kopernika w Bydgoszczy uzyskując tytuł lekarza chorób wewnętrznych
+    <br>
+    <br>
+    To własnie tam swoją ogromną wiedzę oraz doświadczenie chirurgiczne zdobyła szkoląc się i pracując.<br> Jest autorką wielu prac naukowych, publikacji pełnotekstowych, referatów, doniesień zjazdowych krajowych i zagranicznych. Doskonaliła swoją wiedzę uczestnicząc w licznych kongresach oraz polskich i międzynarodowych szkoleniach z zakresu medycyny estetycznej prowadzonych przez światowej sławy specjalistów. Odbyła liczne staże szkoleniowe m.in. w Klinikach Chirurgii Plastycznej oraz Klinikach Chirurgii Twarzowo-Szczękowej. Dzięki współpracy z renomowanymi Instytutami oraz bogatemu doświadczeniu klinicznemu w przeprowadzaniu wysokospecjalistycznych zabiegów w obrębie głowy i szyi – specjalizuje się szczególnie w odmładzaniu tych okolic. Wybitne umiejętności i szeroka wiedza teoretyczna umożliwiają jej przeprowadzanie pełnego spektrum zabiegów z dziedziny medycyny estetycznej.
+    <br>
+
+  <div class="site-content site-content--about">
+    <p></p>
+  </div>
+  <div class="site-content site-content--about">
+    <p></p>
+  </div>
 
 
-<router-outlet></router-outlet>
+
