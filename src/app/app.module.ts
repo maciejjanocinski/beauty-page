@@ -21,7 +21,6 @@ import {AboutComponent} from './components/sites/about/about.component';
 import {GalleryComponent} from './components/sites/gallery/gallery.component';
 import {ContactFormComponent} from './components/pieces/contact-form/contact-form.component';
 import {HttpClientModule} from "@angular/common/http";
-import {GoogleMapsModule} from "@angular/google-maps";
 
 
 @NgModule({
@@ -49,7 +48,6 @@ import {GoogleMapsModule} from "@angular/google-maps";
     MatSidenavModule,
     MatListModule,
     HttpClientModule,
-    GoogleMapsModule,
   ],
   providers: [],
   exports: [],

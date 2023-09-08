@@ -24,11 +24,13 @@
 
 .site-content--home2 {
   height: auto;
-  display: flex;
   min-height: 100vh;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #efefef;
+  overflow-y: hidden;
+
 
 
   h1 {
@@ -85,16 +87,19 @@
   flex-direction: column;
   height: auto;
   min-height: 80vh;
-
+  overflow-y: hidden;
 
   h1 {
-    margin-top: 10vh;
+
     font-size: 2.5rem;
     font-weight: 400;
     padding: 1rem;
     width: fit-content;
     text-align: center;
     line-height: 1.4;
+    margin: 0 auto;
+    margin-top: 10vh;
+
   }
 
   mat-icon {
@@ -154,6 +159,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-y: hidden;
 
   h2 {
     letter-spacing: 1px;
@@ -162,6 +168,15 @@
     margin-top: 3vh;
   }
 }
+
+.site-content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+
 
 @media only screen and (max-width: 1300px) {
   .site-content--home1 {
@@ -248,7 +263,7 @@
 
 .tlo {
 
-
+overflow-y: hidden;
   background-color: rgba(158, 254, 167, 0.13);
 }
 
